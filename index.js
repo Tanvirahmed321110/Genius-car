@@ -71,6 +71,10 @@ app.get("/", (req, res) => {
   res.send("Server Running...");
 });
 
+app.get("/update",(req,res)=>{
+  res.send("Heroku update...")
+})
+
 app.listen(port, () => {
   console.log("running on port,..", port);
 });
